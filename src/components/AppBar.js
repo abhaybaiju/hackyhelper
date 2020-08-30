@@ -17,6 +17,7 @@ function AppBar(props) {
           color="#FFF"
           />
           <Nav direction="row">
+            
             <Button  label ="Logout" icon={<Logout />} onClick={() => { if(user){auth.signOut()} else{alert("You are not logged in" )} }} />
           </Nav>
         </Header>

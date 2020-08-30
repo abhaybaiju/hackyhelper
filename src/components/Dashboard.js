@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Box, Button, Heading, List, Avatar, Tab, Tabs, DropButton, FormField, TextInput } from 'grommet';
-import { Notification } from 'grommet-icons'
+import { Info, Code,Catalog } from 'grommet-icons'
 import { useStateValue } from '../StateProvider';  
 import AppBar from './AppBar';
 import Present from './Present';
@@ -39,15 +39,15 @@ function Dashboard() {
           <Box direction='row' fill  overflow={{ horizontal: 'hidden' }} alignContent="center">
               <Box flex>
                   <Tabs alignControls="stretch">
-                    <Tab title="Ideate">
+                    <Tab icon={<Info/>} title="Ideate">
                     <Box background="dark-2" flex align='center' justify='center'>
                         <Ideate/>
                     </Box>
                     </Tab>
-                    <Tab title="Develop">
+                    <Tab icon={<Code/>} title="Develop">
                         <Develop/>
                     </Tab>
-                    <Tab title="Present">
+                    <Tab icon={<Catalog/>} title="Present">
                         <Box flex align='center' justify='center'>
                             <Present/> <br/>
                         </Box>

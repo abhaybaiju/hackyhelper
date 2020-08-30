@@ -3,7 +3,7 @@ import {TodoList} from '@muchhadd/react-todo-list';
 function Develop() {
     return (
         <div>
-        <TodoList/>
+        <TodoList />
         </div>
     )
 }
