@@ -1,8 +1,10 @@
 import React  from 'react'
 import firebase from 'firebase';
 import { auth } from "../fire";
+import{Card, CardHeader, Button, CardFooter} from 'grommet';
+import {Github} from 'grommet-icons';
 import { useHistory } from 'react-router-dom';
-import AppBar from './AppBar';
+// import AppBar from './AppBar';
 import { useStateValue } from '../StateProvider';
 
 function Login() {
@@ -43,10 +45,23 @@ function Login() {
 
     return (
         <div>
-        <AppBar/>
-        {user ? <button onClick={logout} type="submit" >Sign out</button> :
-        <button onClick={login} type="submit" >Sign in with github</button> 
-        }
+        <Card  
+        height="small" 
+        width="medium" 
+        background="light-1" 
+        margin="auto" 
+        justify="center">
+            <CardHeader pad="medium">Welcome to Hacky-help!</CardHeader>
+            <CardFooter pad="medium">
+            {user ? <Button onClick={logout} type="submit" >Sign out</Button> :
+            <Button 
+            icon={<Github/>}
+            hoverIndicator
+            onClick={login} 
+            type="submit" primary label="Sign in with github"/>
+            }
+            </CardFooter>
+        </Card>
         
         </div>
     )

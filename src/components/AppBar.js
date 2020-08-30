@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box, Button, Heading,Grommet } from 'grommet';
-import { Notification, Logout } from 'grommet-icons';
+import { Avatar , Box, Button, Heading } from 'grommet';
+import { Logout, UserFemale } from 'grommet-icons';
 import { auth } from "../fire";
 import { useStateValue } from '../StateProvider';
 
@@ -20,9 +20,8 @@ function AppBar(props) {
         >
             <Heading level='3' margin='none'>Hacky Helper</Heading>
             <Box direction='row' align='center'
-          justify='between'>
-            <Button icon={<Logout />} onClick={() => { if(user){auth.signOut()} else{alert("You are not logged in" )} }} />
-            <Button icon={<Notification />} onClick={() => {}} />
+            justify='between'>
+              <Button icon={<Logout />} onClick={() => { if(user){auth.signOut()} else{alert("You are not logged in" )} }} />
             </Box>
         </Box> 
     )
