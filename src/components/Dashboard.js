@@ -3,11 +3,24 @@ import { Box, Button, Heading, Avatar, Tab, Tabs, DropButton, FormField, TextInp
 import { Notification } from 'grommet-icons';
 import { useStateValue } from '../StateProvider';  
 import AppBar from './AppBar';
-
+import Present from './Present';
+import Ideate from './Ideate';
+import axios from 'axios'
 function Dashboard() {
 
-    const [{ user }, dispatch] = useStateValue();
-
+    const [{ user, token }, dispatch] = useStateValue();
+    const tok = token;
+    axios.get('https://api.github.com/repos/abhaybaiju/hackyhelper/collaborators', {
+  headers: {
+    'Authorization': `token ${token}`
+  }
+})
+.then((res) => {
+  console.log("here is the response",res.data)
+})
+.catch((error) => {
+  console.error(error)
+})
     return (
         <Box fill>
           <AppBar/>
@@ -29,8 +42,8 @@ function Dashboard() {
                 />
                   <Tabs alignControls="stretch">
                     <Tab title="Ideate">
-                    <Box flex align='center' justify='center'>
-            <h1> Ideate</h1> <br/><Avatar src={user.photoURL} /> <br/>{user.displayName}
+                    <Box background="dark-2" flex align='center' justify='center'>
+                        <Ideate/>
                     </Box>
                     </Tab>
                     <Tab title="Develop">
@@ -40,7 +53,7 @@ function Dashboard() {
                     </Tab>
                     <Tab title="Present">
                         <Box flex align='center' justify='center'>
-                            <h1> Present</h1> <br/><Avatar src={user.photoURL} /> <br/>{user.displayName}
+                            <Present/> <br/><Avatar src={user.photoURL} /> <br/>{user.displayName}
                         </Box>
                     </Tab>
                   </Tabs>
@@ -53,7 +66,8 @@ function Dashboard() {
               align='center'
               justify='center'
             >
-              sidebar
+                
+              sidebar 
             </Box>
             
           </Box>

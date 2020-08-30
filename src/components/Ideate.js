@@ -1,10 +1,8 @@
 import React from 'react';
-import {Box} from 'grommet';
-import AppBar from './AppBar';
+import ReactStickyNotes from '@react-latest-ui/react-sticky-notes';
 function Ideate() {
     return (
-        <div>
-        </div>
+        <ReactStickyNotes />
     )
 }
 
