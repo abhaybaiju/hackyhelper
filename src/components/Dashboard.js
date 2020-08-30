@@ -1,13 +1,15 @@
 import React from 'react';
-import { Box, Button, Heading, Avatar, Tab, Tabs, DropButton, FormField, TextInput } from 'grommet';
+import { Box, Button, Heading, List, Avatar, Tab, Tabs, DropButton, FormField, TextInput } from 'grommet';
 import { Notification } from 'grommet-icons';
 import { useStateValue } from '../StateProvider';  
 import AppBar from './AppBar';
 import Present from './Present';
 import Ideate from './Ideate';
+import Develop from './Develop';
 import axios from 'axios'
 function Dashboard() {
-
+    const names = [];
+    var listItems = null;
     const [{ user, token }, dispatch] = useStateValue();
     const tok = token;
     axios.get('https://api.github.com/repos/abhaybaiju/hackyhelper/collaborators', {
@@ -16,7 +18,15 @@ function Dashboard() {
   }
 })
 .then((res) => {
-  console.log("here is the response",res.data)
+  const data = res.data;
+  data.map(id => {names.push(id.login)})
+  listItems = names.map((name) =>
+  <li>{name}</li>
+);
+  console.log(names[0]);
+  console.log(names);
+
+  
 })
 .catch((error) => {
   console.error(error)
@@ -47,9 +57,7 @@ function Dashboard() {
                     </Box>
                     </Tab>
                     <Tab title="Develop">
-                        <Box flex align='center' justify='center'>
-                            <h1> Develop</h1> <br/><Avatar src={user.photoURL} /> <br/>{user.displayName}
-                        </Box>
+                        <Develop/>
                     </Tab>
                     <Tab title="Present">
                         <Box flex align='center' justify='center'>
@@ -66,8 +74,18 @@ function Dashboard() {
               align='center'
               justify='center'
             >
+                <Heading>Collaborators</Heading>
+                <List
+            primaryKey="name"
+            
+            data={[
+                { name: 'abhaybaiju'},
+                { name: 'adityaoberai'},
+                { name: 'eKuG'},
+                { name: 'SimranMakhija7' },
+            ]}
+            />
                 
-              sidebar 
             </Box>
             
           </Box>
