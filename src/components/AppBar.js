@@ -21,23 +21,7 @@ function AppBar(props) {
           </Nav>
         </Header>
       </Grommet>
-        // {<Box
-        //   tag='header'
-        //   direction='row'
-        //   align='center'
-        //   justify='between'
-        //   background='brand'
-        //   pad={{ left: 'medium', right: 'small', vertical: 'small' }}
-        //   elevation='medium'
-        //   style={{ zIndex: '1' }}
-        //   {...props}
-        // >
-        //     <Heading level='3' margin='none'>Hacky Helper</Heading>
-        //     <Box direction='row' align='center'
-        //     justify='between'>
-        //       <Button icon={<Logout />} onClick={() => { if(user){auth.signOut()} else{alert("You are not logged in" )} }} />
-        //     </Box>
-        // </Box>} 
+        
     )
 }
 
