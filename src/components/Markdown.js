@@ -28,7 +28,7 @@ export default function Markdown() {
         value={value}
         style={{
           height: "500px",
-          width: "130%"
+          width: "100%"
         }}
         onChange={handleEditorChange}
         renderHTML={text => <ReactMarkdown source={text} />}
