@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { Box, Button, Heading,Grommet } from 'grommet';
+import { Box, Button, Grommet } from 'grommet';
 import Dashboard from './components/Dashboard'
 import Login from './components/Login'
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
@@ -33,7 +33,7 @@ function App() {
 		unsubscribe();
 	};
 
-  }, [])
+  }, [dispatch])
 
 
   const theme = {
