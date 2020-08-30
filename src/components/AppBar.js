@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Grommet, Header, Button, Nav,  Anchor } from 'grommet';
+import {  Grommet, Header, Button, Nav,  Anchor, Avatar } from 'grommet';
 import { Logout } from 'grommet-icons';
 import { auth } from "../fire";
 import { useStateValue } from '../StateProvider';
@@ -17,8 +17,8 @@ function AppBar(props) {
           color="#FFF"
           />
           <Nav direction="row">
-            
             <Button  label ="Logout" icon={<Logout />} onClick={() => { if(user){auth.signOut()} else{alert("You are not logged in" )} }} />
+            <Avatar src={user.photoURL} />   
           </Nav>
         </Header>
       </Grommet>
