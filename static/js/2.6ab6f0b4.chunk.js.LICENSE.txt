@@ -1,0 +1,478 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * repeat-string <https://github.com/jonschlinkert/repeat-string>
+ *
+ * Copyright (c) 2014-2015, Jon Schlinkert.
+ * Licensed under the MIT License.
+ */
+
+/*! !../../../node_modules/css-loader!../../../node_modules/sass-loader/lib/loader.js!./index.scss */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+
+/*! ../../../node_modules/css-loader/lib/css-base.js */
+
+/*! ../../../node_modules/style-loader/lib/addStyles.js */
+
+/*! ../partials/note */
+
+/*! ../partials/note-body */
+
+/*! ../partials/note-bubble */
+
+/*! ../partials/note-dot */
+
+/*! ../utils */
+
+/*! ./../buttons */
+
+/*! ./../navbar */
+
+/*! ./../partials/note-header */
+
+/*! ./../utils */
+
+/*! ./../utils/draggable */
+
+/*! ./bubble-view */
+
+/*! ./color-codes */
+
+/*! ./components/react-sticky-notes */
+
+/*! ./fullscreen-view */
+
+/*! ./get-current-datetime */
+
+/*! ./get-element-style */
+
+/*! ./get-note-title */
+
+/*! ./get-notes */
+
+/*! ./get-uuid */
+
+/*! ./h */
+
+/*! ./icons */
+
+/*! ./index.scss */
+
+/*! ./modals */
+
+/*! ./nl-to-br */
+
+/*! ./normal-view */
+
+/*! ./note-body */
+
+/*! ./note-draggable */
+
+/*! ./note-header */
+
+/*! ./note-menu */
+
+/*! ./note-text */
+
+/*! ./page-view */
+
+/*! ./parse-csv */
+
+/*! ./reducers/reducer */
+
+/*! ./upload-modal */
+
+/*! ./urls */
+
+/*! ./utils */
+
+/*! ./views */
+
+/*! exports provided: BubbleView */
+
+/*! exports provided: ButtonAdd, ButtonTitle, ButtonMenu, ButtonHideShow, ButtonTrash, ButtonPageView, ButtonUpload */
+
+/*! exports provided: FullscreenView */
+
+/*! exports provided: NormalView */
+
+/*! exports provided: NormalView, BubbleView, PageView, FullscreenView */
+
+/*! exports provided: PageView */
+
+/*! exports provided: UploadModal */
+
+/*! exports provided: add, trash, menu, hide, show, normalview, bubbleview, pageview, upload, fullscreen */
+
+/*! exports provided: default */
+
+/*! exports provided: getColorCodes */
+
+/*! exports provided: getCurrentDateTime */
+
+/*! exports provided: getElementStyle */
+
+/*! exports provided: getNoteTitle */
+
+/*! exports provided: getNotes */
+
+/*! exports provided: getUUID */
+
+/*! exports provided: h */
+
+/*! exports provided: h, getColorCodes, getUUID, nlToBr, getNotes, getElementStyle, getCurrentDateTime, getNoteTitle, parseCSV */
+
+/*! exports provided: nlToBr */
+
+/*! exports provided: parseCSV */
+
+/*! no static exports found */
+
+/*! react */
+
+/*!**********************!*\
+    !*** ./src/index.js ***!
+    \**********************/
+
+/*!************************!*\
+    !*** external "react" ***!
+    \************************/
+
+/*!***********************************************!*\
+    !*** ./node_modules/style-loader/lib/urls.js ***!
+    \***********************************************/
+
+/*!*************************************************!*\
+    !*** ./node_modules/css-loader/lib/css-base.js ***!
+    \*************************************************/
+
+/*!****************************************************!*\
+    !*** ./node_modules/style-loader/lib/addStyles.js ***!
+    \****************************************************/
+
+/*!****************************************************!*\
+    !*** ./src/components/react-sticky-notes/index.js ***!
+    \****************************************************/
+
+/*!******************************************************!*\
+    !*** ./src/components/react-sticky-notes/index.scss ***!
+    \******************************************************/
+
+/*!******************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/h.js ***!
+    \******************************************************/
+
+/*!**********************************************************!*\
+    !*** ./src/components/react-sticky-notes/icons/index.js ***!
+    \**********************************************************/
+
+/*!**********************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/index.js ***!
+    \**********************************************************/
+
+/*!**********************************************************!*\
+    !*** ./src/components/react-sticky-notes/views/index.js ***!
+    \**********************************************************/
+
+/*!***********************************************************!*\
+    !*** ./src/components/react-sticky-notes/modals/index.js ***!
+    \***********************************************************/
+
+/*!***********************************************************!*\
+    !*** ./src/components/react-sticky-notes/navbar/index.js ***!
+    \***********************************************************/
+
+/*!************************************************************!*\
+    !*** ./src/components/react-sticky-notes/buttons/index.js ***!
+    \************************************************************/
+
+/*!************************************************************!*\
+    !*** ./src/components/react-sticky-notes/partials/note.js ***!
+    \************************************************************/
+
+/*!*************************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/get-uuid.js ***!
+    \*************************************************************/
+
+/*!*************************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/nl-to-br.js ***!
+    \*************************************************************/
+
+/*!**************************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/draggable.js ***!
+    \**************************************************************/
+
+/*!**************************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/get-notes.js ***!
+    \**************************************************************/
+
+/*!**************************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/parse-csv.js ***!
+    \**************************************************************/
+
+/*!**************************************************************!*\
+    !*** ./src/components/react-sticky-notes/views/page-view.js ***!
+    \**************************************************************/
+
+/*!***************************************************************!*\
+    !*** ./src/components/react-sticky-notes/reducers/reducer.js ***!
+    \***************************************************************/
+
+/*!****************************************************************!*\
+    !*** ./src/components/react-sticky-notes/partials/note-dot.js ***!
+    \****************************************************************/
+
+/*!****************************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/color-codes.js ***!
+    \****************************************************************/
+
+/*!****************************************************************!*\
+    !*** ./src/components/react-sticky-notes/views/bubble-view.js ***!
+    \****************************************************************/
+
+/*!****************************************************************!*\
+    !*** ./src/components/react-sticky-notes/views/normal-view.js ***!
+    \****************************************************************/
+
+/*!*****************************************************************!*\
+    !*** ./src/components/react-sticky-notes/partials/note-body.js ***!
+    \*****************************************************************/
+
+/*!*****************************************************************!*\
+    !*** ./src/components/react-sticky-notes/partials/note-menu.js ***!
+    \*****************************************************************/
+
+/*!*****************************************************************!*\
+    !*** ./src/components/react-sticky-notes/partials/note-text.js ***!
+    \*****************************************************************/
+
+/*!******************************************************************!*\
+    !*** ./src/components/react-sticky-notes/modals/upload-modal.js ***!
+    \******************************************************************/
+
+/*!*******************************************************************!*\
+    !*** ./src/components/react-sticky-notes/partials/note-bubble.js ***!
+    \*******************************************************************/
+
+/*!*******************************************************************!*\
+    !*** ./src/components/react-sticky-notes/partials/note-header.js ***!
+    \*******************************************************************/
+
+/*!*******************************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/get-note-title.js ***!
+    \*******************************************************************/
+
+/*!********************************************************************!*\
+    !*** ./src/components/react-sticky-notes/views/fullscreen-view.js ***!
+    \********************************************************************/
+
+/*!**********************************************************************!*\
+    !*** ./src/components/react-sticky-notes/partials/note-draggable.js ***!
+    \**********************************************************************/
+
+/*!**********************************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/get-element-style.js ***!
+    \**********************************************************************/
+
+/*!*************************************************************************!*\
+    !*** ./src/components/react-sticky-notes/utils/get-current-datetime.js ***!
+    \*************************************************************************/
+
+/*!*************************************************************************************************************************!*\
+    !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/components/react-sticky-notes/index.scss ***!
+    \*************************************************************************************************************************/
+
+/**
+    * @license
+    * Copyright 2017 Google LLC
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *   http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+
+/**
+  * @license
+  * Copyright 2017 Google LLC
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  *
+  *   http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+
+/**
+  * @license
+  * Copyright 2020 Google LLC
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  *
+  *   http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2018 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/** @license React v0.19.1
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */

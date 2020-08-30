@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/hackyhelper/static/js/main.773e0f2d.chunk.js",
+    "main.js.map": "/hackyhelper/static/js/main.773e0f2d.chunk.js.map",
+    "runtime-main.js": "/hackyhelper/static/js/runtime-main.f5a15a01.js",
+    "runtime-main.js.map": "/hackyhelper/static/js/runtime-main.f5a15a01.js.map",
+    "static/css/2.f69b3b01.chunk.css": "/hackyhelper/static/css/2.f69b3b01.chunk.css",
+    "static/js/2.6ab6f0b4.chunk.js": "/hackyhelper/static/js/2.6ab6f0b4.chunk.js",
+    "static/js/2.6ab6f0b4.chunk.js.map": "/hackyhelper/static/js/2.6ab6f0b4.chunk.js.map",
+    "index.html": "/hackyhelper/index.html",
+    "precache-manifest.6756115d4bda4af35080582a2e4cc69e.js": "/hackyhelper/precache-manifest.6756115d4bda4af35080582a2e4cc69e.js",
+    "service-worker.js": "/hackyhelper/service-worker.js",
+    "static/css/2.f69b3b01.chunk.css.map": "/hackyhelper/static/css/2.f69b3b01.chunk.css.map",
+    "static/js/2.6ab6f0b4.chunk.js.LICENSE.txt": "/hackyhelper/static/js/2.6ab6f0b4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5a15a01.js",
+    "static/css/2.f69b3b01.chunk.css",
+    "static/js/2.6ab6f0b4.chunk.js",
+    "static/js/main.773e0f2d.chunk.js"
+  ]
+}
