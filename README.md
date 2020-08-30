@@ -1,68 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# HackyHelper - A Hackathon Management Platform By The Hackers For The Hackers
 
-## Available Scripts
+## Inspiration
 
-In the project directory, you can run:
+While participating in various virtual hackathons and collaborating with folks remotely over the summer has been extremely exciting, there are certain issues that we have faced while developing and managing our projects. In the past hackathons that we have attended or organized, we have seen that out of the total registered participants, even if 75% of the folks show up for the final event, only about 30% are actually able to complete their projects and submit for judging. A major reason for this is that while hackathons can be a ton of fun, they can be quite chaotic for teams, especially for those with rookie hackers.
 
-### `npm start`
+There are some extremely common issues that we have noticed while developing the project. Issues such as haywire management of notes during ideation, delays in communicating project updates, maintaining a list of to-dos to be completed, etc., can hamper the productivity of a team significantly in the overall hackathon process. At this point, we have not yet discovered a project management tool that has dedicatedly been made keeping ease-of-use for beginners in mind. Therefore, we decided to create a hackathon management platform created from the hacker’s perspective.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+And thus, **HackyHelper** was born :D
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## What it does
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+**HackyHelper** is a hackathon project management platform designed for hackers to assist them in streamlining their development process from ideation to demo. With various functionalities that include (but are not limited to) sticky notes for ideation, Figma embed for easy access of wireframes, to-do lists to keep track of pending work, a Markdown editor to manage documentation, GitHub integration to manage the team members, and a nice little Spotify playlist to groove along with, HackyHelper is the Operations Control Center that hackers need to manage their projects. It is truly a solution **by the hackers, for the hackers**!
