@@ -1,11 +1,10 @@
 import React, {useEffect} from 'react';
-import { Box, Button, Grommet } from 'grommet';
+import { Card, CardHeader, CardFooter, Box, Button, Grommet } from 'grommet';
 import Dashboard from './components/Dashboard'
 import Login from './components/Login'
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import {useStateValue} from './StateProvider';
 import {auth} from './fire';
-import AppBar from './components/AppBar';
 
 function App() {
 
@@ -62,11 +61,30 @@ function App() {
           <Route path="/dashboard" component={Dashboard} />
         }
           <Route path="/">
-            <AppBar/>
             <br/>
             <Link to={user ? "/dashboard" : "/login"}>
               <Box fill> 
-              <Button primary alignSelf="center">Get Started</Button>
+                <Card 
+                  style={
+                      {
+                          position: "fixed",
+                          top: "50%",
+                          left: "50%",
+                          transform: "translate(-50%, -50%)"
+                      }
+                  } 
+                  height="small" 
+                  width="medium" 
+                  background="accent-1" 
+                  margin="auto" 
+                  justify="center">
+                      <CardHeader pad="medium">Welcome to Hacky-helper!</CardHeader>
+                      <CardFooter pad="medium">
+                        <Button primary alignSelf="center" label="Get Started"/>
+                      </CardFooter>
+                  </Card>
+    
+              
               </Box>
             </Link>
           </Route>

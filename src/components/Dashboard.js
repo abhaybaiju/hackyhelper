@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Button, Heading, Avatar, Tab, Tabs, DropButton, FormField, TextInput } from 'grommet';
-import { Notification } from 'grommet-icons';
+import { Box,  Avatar, Tab, Tabs} from 'grommet';
+
 import { useStateValue } from '../StateProvider';  
 import AppBar from './AppBar';
 import Present from './Present';
@@ -8,8 +8,8 @@ import Ideate from './Ideate';
 import axios from 'axios'
 function Dashboard() {
 
-    const [{ user, token }, dispatch] = useStateValue();
-    const tok = token;
+    const [{ user, token }] = useStateValue();
+    //const tok = token;
     axios.get('https://api.github.com/repos/abhaybaiju/hackyhelper/collaborators', {
   headers: {
     'Authorization': `token ${token}`
@@ -24,22 +24,9 @@ function Dashboard() {
     return (
         <Box fill>
           <AppBar/>
-            
-        
+          <br/>
           <Box direction='row' fill  overflow={{ horizontal: 'hidden' }} alignContent="center">
               <Box flex>
-              <DropButton
-                label="Add Teammates"
-                dropAlign={{ top: 'bottom', right: 'right' }}
-                dropContent={
-                    <Box>
-                    <FormField label="Enter email">
-                        <TextInput placeholder="type here" />
-                    </FormField>
-                    <Button primary>Click to Add</Button>
-                    </Box>
-                }
-                />
                   <Tabs alignControls="stretch">
                     <Tab title="Ideate">
                     <Box background="dark-2" flex align='center' justify='center'>
@@ -48,12 +35,12 @@ function Dashboard() {
                     </Tab>
                     <Tab title="Develop">
                         <Box flex align='center' justify='center'>
-                            <h1> Develop</h1> <br/><Avatar src={user.photoURL} /> <br/>{user.displayName}
+                            <h1> Develop</h1> <br/>
                         </Box>
                     </Tab>
                     <Tab title="Present">
                         <Box flex align='center' justify='center'>
-                            <Present/> <br/><Avatar src={user.photoURL} /> <br/>{user.displayName}
+                            <Present/> <br/>
                         </Box>
                     </Tab>
                   </Tabs>
@@ -65,9 +52,8 @@ function Dashboard() {
               elevation='small'
               align='center'
               justify='center'
-            >
-                
-              sidebar 
+            > 
+              <Avatar src={user.photoURL} /> <br/>{user.displayName} 
             </Box>
             
           </Box>
