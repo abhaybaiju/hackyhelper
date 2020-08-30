@@ -2,7 +2,7 @@ import React from 'react'
 import firebase from 'firebase';
 import { auth } from "../fire";
 import{Card, CardHeader, Button, CardFooter} from 'grommet';
-import {Github} from 'grommet-icons';
+import {Github, Logout} from 'grommet-icons';
 import { useHistory } from 'react-router-dom';
 // import AppBar from './AppBar';
 import { useStateValue } from '../StateProvider';
@@ -30,14 +30,7 @@ function Login() {
             history.push('/dashboard');
             // ...
           }).catch(function(error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // The email of the user's account used.
-            var email = error.email;
-            // The firebase.auth.AuthCredential type that was used.
-            var credential = error.credential;
-            // ...
+            console.log(error);
           });
     };
 
@@ -49,25 +42,42 @@ function Login() {
    
 
     return (
-        <div>
-        <Card  
+        <div className="App">
+        <Card 
+        style={
+            {
+                position: "fixed",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)"
+            }
+        } 
         height="small" 
         width="medium" 
-        background="light-1" 
+        background="accent-1" 
         margin="auto" 
         justify="center">
-            <CardHeader pad="medium">Welcome to Hacky-help!</CardHeader>
+            <CardHeader pad="medium">Welcome to Hacky-helper!</CardHeader>
             <CardFooter pad="medium">
-            {user ? <Button onClick={logout} type="submit" >Sign out</Button> :
+            {user ? 
+            <Button
+            icon={<Logout/>}
+            hoverIndicator 
+            onClick={logout} 
+            type="submit" 
+            color="#000" 
+            label="Sign out"/>
+             :
             <Button 
             icon={<Github/>}
             hoverIndicator
             onClick={login} 
-            type="submit" primary label="Sign in with github"/>
+            type="submit" 
+            color="#000" 
+            label="Sign in with github"/>
             }
             </CardFooter>
         </Card>
-        
         </div>
     )
 }

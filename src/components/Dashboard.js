@@ -1,6 +1,7 @@
 import React from 'react';
+
 import { Box, Button, Heading, List, Avatar, Tab, Tabs, DropButton, FormField, TextInput } from 'grommet';
-import { Notification } from 'grommet-icons';
+import { Notification } from 'grommet-icons'
 import { useStateValue } from '../StateProvider';  
 import AppBar from './AppBar';
 import Present from './Present';
@@ -11,7 +12,7 @@ function Dashboard() {
     const names = [];
     var listItems = null;
     const [{ user, token }, dispatch] = useStateValue();
-    const tok = token;
+    //const tok = token;
     axios.get('https://api.github.com/repos/abhaybaiju/hackyhelper/collaborators', {
   headers: {
     'Authorization': `token ${token}`
@@ -34,22 +35,9 @@ function Dashboard() {
     return (
         <Box fill>
           <AppBar/>
-            
-        
+          <br/>
           <Box direction='row' fill  overflow={{ horizontal: 'hidden' }} alignContent="center">
               <Box flex>
-              <DropButton
-                label="Add Teammates"
-                dropAlign={{ top: 'bottom', right: 'right' }}
-                dropContent={
-                    <Box>
-                    <FormField label="Enter email">
-                        <TextInput placeholder="type here" />
-                    </FormField>
-                    <Button primary>Click to Add</Button>
-                    </Box>
-                }
-                />
                   <Tabs alignControls="stretch">
                     <Tab title="Ideate">
                     <Box background="dark-2" flex align='center' justify='center'>
@@ -61,7 +49,7 @@ function Dashboard() {
                     </Tab>
                     <Tab title="Present">
                         <Box flex align='center' justify='center'>
-                            <Present/> <br/><Avatar src={user.photoURL} /> <br/>{user.displayName}
+                            <Present/> <br/>
                         </Box>
                     </Tab>
                   </Tabs>
