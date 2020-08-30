@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button, Heading, List, Avatar, Tab, Tabs, DropButton, FormField, TextInput } from 'grommet';
+import { Box,  Heading, List, Tab, Tabs } from 'grommet';
 import { Info, Code,Catalog } from 'grommet-icons'
 import { useStateValue } from '../StateProvider';  
 import AppBar from './AppBar';
@@ -74,7 +74,7 @@ function Dashboard() {
             ]}
             />
             <Heading>Hacky Beats🏖</Heading>
-                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX5Ozry5U6G0d" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe title="spotify" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX5Ozry5U6G0d" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </Box>
             
           </Box>
