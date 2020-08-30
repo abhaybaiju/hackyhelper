@@ -73,7 +73,7 @@ function Dashboard() {
                 { name: 'SimranMakhija7' },
             ]}
             />
-            <Heading>Hacky Beats🏖</Heading>
+            <Heading>Hacky Beats 🏖 </Heading>
                 <iframe title="spotify" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX5Ozry5U6G0d" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </Box>
             
