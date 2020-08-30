@@ -34,7 +34,7 @@ export default function Markdown() {
         renderHTML={text => <ReactMarkdown source={text} />}
       />
       <br/>
-      <Button primary onClick={handleClick}label="Get value"/>
+      <Button primary onClick={handleClick}label="Get Markdown"/>
     </div>
   );
 }
