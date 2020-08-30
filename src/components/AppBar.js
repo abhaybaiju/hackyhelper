@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Grommet, Header, Button, Nav, Heading, Anchor } from 'grommet';
+import {  Grommet, Header, Button, Nav,  Anchor } from 'grommet';
 import { Logout } from 'grommet-icons';
 import { auth } from "../fire";
 import { useStateValue } from '../StateProvider';
