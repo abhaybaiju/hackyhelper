@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import { Box, Button, Heading, List, Avatar, Tab, Tabs, DropButton, FormField, TextInput } from 'grommet';
+import { Box, Heading, List, Tab, Tabs, FormField, TextInput } from 'grommet';
 import { Info, Code,Catalog,Edit } from 'grommet-icons'
 import { useStateValue } from '../StateProvider';  
 import AppBar from './AppBar';
@@ -8,30 +8,33 @@ import Present from './Present';
 import Ideate from './Ideate';
 import Develop from './Develop';
 import axios from 'axios'
+
+
+
 function Dashboard() {
     const names = [];
     var listItems = null;
-    const [{ user, token }, dispatch] = useStateValue();
+    const [{ user, token }] = useStateValue();
     //const tok = token;
     axios.get('https://api.github.com/repos/abhaybaiju/hackyhelper/collaborators', {
-  headers: {
-    'Authorization': `token ${token}`
-  }
-})
-.then((res) => {
-  const data = res.data;
-  data.map(id => {names.push(id.login)})
-  listItems = names.map((name) =>
-  <li>{name}</li>
-);
-  console.log(names[0]);
-  console.log(names);
-})
-.catch((error) => {
-  console.error(error)
-})
+    headers: {
+      'Authorization': `token ${token}`
+    }
+  })
+  .then((res) => {
+    const data = res.data;
+    data.map(id => {names.push(id.login)})
+    listItems = names.map((name) =>
+    <li>{name}</li>
+  );
+    console.log(names[0]);
+    console.log(names);
+  })
+  .catch((error) => {
+    console.error(error)
+  })
 
-const [url, seturl ] = useState("https://www.figma.com/embed?embed_host=astra&url=https://www.figma.com/file/B8L3o4JEmZIb5epRDvSGZH/HackyHelper?node-id=3%3A2")
+    const [url, seturl ] = useState("https://www.figma.com/embed?embed_host=astra&url=https://www.figma.com/file/B8L3o4JEmZIb5epRDvSGZH/HackyHelper?node-id=3%3A2")
     return (
         <Box fill>
           <AppBar/>
@@ -48,14 +51,15 @@ const [url, seturl ] = useState("https://www.figma.com/embed?embed_host=astra&ur
                     <Box flex align='center' justify='center'>
                         <br></br>
                     <FormField label="Enter Figma URL">
-                        <TextInput placeholder="type here" value={url} onChange={event => seturl(event.target.value)}/>
+                        <TextInput placeholder="enter Figma view link"  onChange={event => seturl("https://www.figma.com/embed?embed_host=astra&url="+event.target.value)}/>
                     </FormField>
                         <br></br>
                     <iframe
-                    height="450"
-                    width="800"
-                    src={url}
-                    allowfullscreen
+                      title="figma"
+                      height="450"
+                      width="800"
+                      src={url}
+                      allowfullscreen
                     />
                     </Box>
                     </Tab>
