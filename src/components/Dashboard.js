@@ -8,7 +8,6 @@ function Dashboard() {
 
     const [{ user }, dispatch] = useStateValue();
 
-
     return (
         <Box fill>
           <AppBar/>
@@ -31,7 +30,7 @@ function Dashboard() {
                   <Tabs alignControls="stretch">
                     <Tab title="Ideate">
                     <Box flex align='center' justify='center'>
-                        <h1> Ideate</h1> <br/><Avatar src={user.photoURL} /> <br/>{user.displayName}
+            <h1> Ideate</h1> <br/><Avatar src={user.photoURL} /> <br/>{user.displayName}
                     </Box>
                     </Tab>
                     <Tab title="Develop">

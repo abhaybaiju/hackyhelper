@@ -1,4 +1,4 @@
-import React  from 'react'
+import React from 'react'
 import firebase from 'firebase';
 import { auth } from "../fire";
 import { useHistory } from 'react-router-dom';
@@ -7,8 +7,7 @@ import { useStateValue } from '../StateProvider';
 
 function Login() {
     
-    const [{ user }, dispatch] = useStateValue();
-
+    const [{ user, token }, dispatch] = useStateValue();
     const history = useHistory();
     const login = event => {
         event.preventDefault();
@@ -16,7 +15,13 @@ function Login() {
         provider.addScope('public_repo');
         auth.signInWithPopup(provider).then(function(result) {
             // This gives you a GitHub Access Token. You can use it to access the GitHub API.
-            var token = result.credential.accessToken;
+            var tok = result.credential.accessToken;
+            console.log("tok is",tok)
+            dispatch({
+                type: "SET_TOKEN",
+                token: tok,
+            })
+            console.log("token is",token)
             // The signed-in user info.
             var user = result.user;
             console.log(user);
