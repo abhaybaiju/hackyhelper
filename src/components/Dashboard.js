@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import { Box, Button, Heading, List, Avatar, Tab, Tabs, DropButton, FormField, TextInput } from 'grommet';
-import { Info, Code,Catalog } from 'grommet-icons'
+import { Info, Code,Catalog,Edit } from 'grommet-icons'
 import { useStateValue } from '../StateProvider';  
 import AppBar from './AppBar';
 import Present from './Present';
@@ -26,12 +26,12 @@ function Dashboard() {
 );
   console.log(names[0]);
   console.log(names);
-
-  
 })
 .catch((error) => {
   console.error(error)
 })
+
+const [url, seturl ] = useState("https://www.figma.com/embed?embed_host=astra&url=https://www.figma.com/file/B8L3o4JEmZIb5epRDvSGZH/HackyHelper?node-id=3%3A2")
     return (
         <Box fill>
           <AppBar/>
@@ -42,6 +42,21 @@ function Dashboard() {
                     <Tab icon={<Info/>} title="Ideate">
                     <Box background="dark-2" flex align='center' justify='center'>
                         <Ideate/>
+                    </Box>
+                    </Tab>
+                    <Tab icon={<Edit/>} title="Design">
+                    <Box flex align='center' justify='center'>
+                        <br></br>
+                    <FormField label="Enter Figma URL">
+                        <TextInput placeholder="type here" value={url} onChange={event => seturl(event.target.value)}/>
+                    </FormField>
+                        <br></br>
+                    <iframe
+                    height="450"
+                    width="800"
+                    src={url}
+                    allowfullscreen
+                    />
                     </Box>
                     </Tab>
                     <Tab icon={<Code/>} title="Develop">
